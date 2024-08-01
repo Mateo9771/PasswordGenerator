@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+}
+.App{
+    background-color: #2a2a2e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    font-family: "Ga Maamli", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: rgb(192, 181, 181);
+    h1{
+        font-family: "Rubik Bubbles", system-ui;
+        font-weight: 400;
+        font-style: normal;
+        color: rgb(224, 211, 211);
+    }
+    .PassApp{
+        background-color: #0d0d0e;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1.5rem;
+        text-align: center;
+        border-style: groove;
+        box-shadow: inset 1px 1px 50px #81b3b0;
+        width: 20rem;
+        height: 30rem;
+        button{
+            width: 10rem;
+            height: 3rem;
+            border-radius: 10px;
+        }
+    }
+    .Result{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #333;
+        color: #fff;
+        height: 3rem;
+        width: 13rem;
+        box-shadow: 2px 2px 2px 1px rgba(114, 108, 108, 0.2);
+    }
+    .Char{
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        margin-top: 1.5rem;
+        select{
+            text-align: center;
+            width: 11rem;
+            height: 2rem;
+            border-radius: 10px;
+        }
+    }
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generador de contraseñas</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Rubik+Bubbles&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ga+Maamli&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Rubik+Bubbles&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="App">
+        <div class="PassApp">
+            <h1>Passwords</h1>
+            <p>Seleccione las condiciones de la contraseña</p>
+            <form id="password-form">
+                <div>
+                    <label for="uppercase">Incluir Mayusculas</label>
+                    <input type="checkbox" id="uppercase" name="uppercase">
+                </div>
+                <div>
+                    <label for="lowercase">Incluir Minusculas</label>
+                    <input type="checkbox" id="lowercase" name="lowercase">
+                </div>
+                <div>
+                    <label for="symbols">Incluir Simbolos</label>
+                    <input type="checkbox" id="symbols" name="symbols">
+                </div>
+                <div>
+                    <label for="numbers">Incluir Numeros</label>
+                    <input type="checkbox" id="numbers" name="numbers">
+                </div>
+                <div class="Char">
+                    <label for="length">Longitud de Contraseña:</label>
+                    <select name="length" id="length">
+                        <option value="10">10 Caracteres</option>
+                        <option value="15">15 Caracteres</option>
+                        <option value="20">20 Caracteres</option>
+                    </select>
+                </div>
+            </form>
+            <button id="generate">Generar Contraseña</button>
+            <div class="Result">
+                <span id="result"></span>
+                <a href="#"></a>
+            </div>
+        </div>
+    </div>
+    <script src="./App.js"></script>
+</body>
+</html>
